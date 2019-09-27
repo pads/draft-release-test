@@ -1,5 +1,5 @@
-name-template: 'BUILDNUM-GITHUB_SHA - DD Month YYYY'
-tag-template: 'BUILDNUM-GITHUB_SHA'
+_extends: .github
+name-template: v1 🌈
 replacers:
   - search: '/DRT-(\d+)/g'
     replace: '[DRT-$1](https://github.com/pads/draft-release-test/issues/$1)'
