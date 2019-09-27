@@ -1,13 +1,13 @@
-name-template: '<build num>-$GITHUB_SHA - <DD Month YYYY>'
-tag-template: '<build num>-$GITHUB_SHA'
+name-template: 'BUILDNUM-$GITHUB_SHA - DD Month YYYY'
+tag-template: 'BUILDNUM-$GITHUB_SHA'
 replacers:
   - search: '/DRT-(\d+)/g'
-    replace: '[$1](https://github.com/pads/draft-release-test/issues/$1)'
+    replace: '[DRT-$1](https://github.com/pads/draft-release-test/issues/$1)'
 categories:
   - title: 'Features'
-    label: '[feature]'
+    label: 'feature'
   - title: 'Bug Fixes'
-    label: '[fix]'      
+    label: 'bug'      
 template: |
   ## What’s Changed
 
